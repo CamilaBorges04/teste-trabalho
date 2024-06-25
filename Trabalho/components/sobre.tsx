@@ -13,13 +13,13 @@ export default function App() {
                     <Text style={styles.title}>NavTrack</Text>
                     <Image source={celgps} style={styles.celgps} />
                     <View style={styles.div}>
-                    <Text style={styles.subtitle}>Sua localização atual!</Text>
-                    <Text style={styles.subtitle2}>Longitude::</Text>
-                    <Text style={styles.subtitle3}>Latitude:</Text>
-                    <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
-                        <Text style={styles.buttonText}>Voltar</Text>
-                    </TouchableOpacity>
-                    <Text style={styles.subtitle1}>Developded by @CamilaBorges</Text>
+                        <Text style={styles.subtitle}>Sua localização atual!</Text>
+                        <Text style={styles.subtitle2}>Longitude:</Text>
+                        <Text style={styles.subtitle3}>Latitude:</Text>
+                        <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
+                            <Text style={styles.buttonText}>Voltar</Text>
+                        </TouchableOpacity>
+                        <Text style={styles.subtitle1}>Developded by @CamilaBorges</Text>
                     </View>
                 </View>
             );
@@ -42,11 +42,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: 430,
+        height: 450,
+        borderTopLeftRadius: 12,
+        borderTopRightRadius: 12,
     },
     title:{
+        color: '#6672AD',
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#000',
         marginTop: 20,
     },
     subtitle: {
@@ -56,14 +59,14 @@ const styles = StyleSheet.create({
         color: '#fff',
         marginBottom: 5,
         alignItems: 'center',
-        marginTop: 47,
+        marginTop: 40,
     },
     subtitle1: {
         fontFamily: 'Arial',
         fontSize: 10,
         color: '#fff',
         marginBottom: 5,
-        marginTop: 69,
+        marginTop: 60,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -73,14 +76,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#fff',
         marginBottom: 27,
-        marginTop: 64,
+        marginTop: 60,
     },
     subtitle3: {
         fontFamily: 'Arial',
         fontSize: 18,
         fontWeight: 'bold',
         color: '#fff',
-        marginBottom: 96,
+        marginBottom: 75,
         marginTop: 27,
     },
     button: {
@@ -88,9 +91,9 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 30,
         borderRadius: 12,
-        marginTop: 20,
         width:100,
         height: 30,
+        textAlign: 'center',
     },
     buttonText: {
         fontFamily: 'Arial',
@@ -101,7 +104,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     celgps:{
-        width: 335,
-        height: 335,
+        width: 250,
+        height: 250,
     },
 });
